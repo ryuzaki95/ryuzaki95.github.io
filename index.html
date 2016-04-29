@@ -148,18 +148,18 @@ Image placeholders: placemi.com
             <div class="col-md-5 col-md-offset-1">
                 <div class="content">
                   <div class="pull-middle">
-                    <h1 class="page-header">Create an awesome App template with Bootstrap.</h1>
+                    <h1 class="page-header">Bấm nút Go Live để Livestream</h1>
                     <p class="lead">Lorem ipsum dolor sit amet.</p>
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <form action="#" role="form">
+                          
                           
                                   
                                    
-                                      <button class="btn btn-success btn-circle" type="submit" id="liveButton"><h1>Go Live Stream Facebook</h1></button>
+                                      <button class="btn btn-success btn-circle" type="submit" id="liveButton"><h1>Go Live Facebook</h1></button>
                                                          
                               
-                            </form>
+                            
                         </div>
                     </div>
                   </div>              
@@ -173,7 +173,8 @@ Image placeholders: placemi.com
           </div>
         </div>
     </header>
-    
+    <div id="fb-root"></div>
+    <div class="fb-comments" data-href="http://livefb.me" data-numposts="10"></div>
     <footer class="footer text-center">
         <div class="container">
             <small>© Copyright 2016. Live FB"></a></small>
@@ -185,6 +186,14 @@ Image placeholders: placemi.com
   
 
 <script>
+
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=251173608570125";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 document.getElementById('liveButton').onclick = function() {
   FB.ui({
     display: 'popup',
